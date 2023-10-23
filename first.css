@@ -14,6 +14,7 @@ margin-left:20px;
     .navigation{
         margin-right:150px;
         margin-top:20px;
+        flex:1;
     }
     .vvv {
         width: 300px;
@@ -72,6 +73,7 @@ position:fixed;
         text-align: center;
         display: flex;
         z-index:99;
+        flex:1;
         padding-top: 20px;
         justify-content:space-between;
     }
@@ -82,7 +84,7 @@ position:fixed;
     }    
 .nhi{
 background: url('3337721-68234688-2560-1440.jpg') no-repeat;
-width: 100%;
+width: 1349px;
 height:500px;
 margin-top: 80px;
 flex:1;
@@ -151,8 +153,10 @@ body{
 .menu-bar{
  color:#000000;
     text-align: center;
-    width:100%;
+    width:1348px;
     background: black;
+    display:flex;
+    flex: 1;
 
     
     
@@ -233,6 +237,7 @@ background: rgb(0,100,0);
     height:565px;
     width:1348px;
     margin-right: 10px;
+    flex: 1;
      }
 .vr{
     float:right;
@@ -287,6 +292,7 @@ border-radius: 6px;
 }
 .champ{
     display:flex;
+    flex:1;
     text-align: center;
     margin-top: 20px;
     background-color: wheat;
@@ -327,11 +333,12 @@ border-radius: 6px;
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding-left: 25%;
     border: 2px solid rgb(192, 187, 187);
 margin-top: 40px;
 border-left: #e9dfdf;
 border-right: #fff;
+display: flex;
+flex: 1;
   }
   .dd00{
 align-items: center;
@@ -414,15 +421,15 @@ margin-bottom: 10px;
     padding-left: 70px;
 }
 .bbb{
-    height:150px;
-    width:150px;
+    height:80px;
+    width:80px;
 }
 .ee{
     text-decoration: none;
-    margin-top: 1000px;
+    margin-top: 1200px;
     padding-left: 5px;
     padding-right: 5px;
-    margin-left: 277px;
+    margin-left: 260px;
     border-radius: 3px;
     background-color: rgb(165, 190, 190);
 }
@@ -520,7 +527,9 @@ color:rgb(20, 15, 9);
 .hhh{
       align-items: center;
     display: flex;
-    padding-left: 500px;
+    flex: 1;
+    width:1348px;
+    padding-left: 50px;
  margin-bottom: -40px;
     height:150px;
     border: 2px solid rgb(207, 201, 201);
@@ -658,6 +667,7 @@ padding-left: 50px;
     height: 100px;
     width:1349px;
     display:flex;
+    flex: 1;
     padding-left: 400px;
     margin-top: 10px;
     border-right: white;
@@ -691,6 +701,7 @@ border: 2px solid rgb(160, 148, 148);
     height:90px;
     background-color:#fff;
     display:flex;
+    flex:1;
     align-items: center;
     padding-left: 200px;
     margin-left: 30px;
@@ -704,6 +715,7 @@ border: 2px solid rgb(160, 148, 148);
     border-radius: 15px;
     margin-left: 300px;
     height: 60px;
+    flex: 1;
     font-size: 20px;
    padding-top: 12px;
    font-weight:1px;
@@ -722,6 +734,7 @@ border: 2px solid rgb(160, 148, 148);
     font-weight: 2px;
     font-family: roboto, arial;
     width: 300px;
+    flex: 1;
    
 }
 .oh{
