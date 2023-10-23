@@ -759,3 +759,8 @@ border-radius: 20px;
     border-radius: 20px;
     margin-left: 40px;
 }
+.hyy{
+        display:flex;
+    flex:1;
+    align-items: center;
+   }
