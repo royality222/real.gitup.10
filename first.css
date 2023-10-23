@@ -703,9 +703,12 @@ border: 2px solid rgb(160, 148, 148);
     display:flex;
     flex:1;
     align-items: center;
-    padding-left: 200px;
+    padding-left: 20px;
     margin-left: 30px;
-    margin-top: -5px;
+    margin-top: -3px;
+    border-radius: 5px;
+    padding-top: 4px;
+    padding-bottom: 2px;
 }
 .gg{
     background-color: #040501;
@@ -743,9 +746,16 @@ border: 2px solid rgb(160, 148, 148);
 }
 
 .ffl{
-    height: 400px;
-    width:700px;
-margin-left: 300px;
+    height: 200px;
+    width:200px;
+margin-left: 100px;
 margin-top: 30px;
+border-radius: 20px;
     
+}
+.qr1{
+    height: 90px;
+    width: 100px;
+    border-radius: 20px;
+    margin-left: 40px;
 }
