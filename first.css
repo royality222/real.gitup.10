@@ -391,10 +391,10 @@ margin-top: 40px;
 }
 .dd1{
 align-items: center;
-padding-left:130px;
+padding-left:145px;
 height:40px;
-width:530px;
-font-size: 20px;
+width:510px;
+font-size: 15px;
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 font-weight: 1px;
 background-color: rgb(70, 67, 67);
@@ -697,14 +697,14 @@ border: 2px solid rgb(160, 148, 148);
     width:50px;
 }
 .huh{
-    width:1300px;
+    width:1340px;
     height:90px;
     background-color:#fff;
     display:flex;
     flex:1;
     align-items: center;
-    padding-left: 20px;
-    margin-left: 30px;
+    padding-left: 1px;
+    margin-left: 10px;
     margin-top: -3px;
     border-radius: 5px;
     padding-top: 4px;
