@@ -136,7 +136,7 @@ body{
     
     background-size: cover;
     background-position: center;
-    background-color: #e9dfdf;
+    background-color:white;
     font-family: sans-serif;
 
 }
@@ -466,11 +466,20 @@ margin-bottom: 10px;
     border:none;
     width:50px;
     border-radius: 1px;
+    padding-left:5px ;
+    padding-right:5px ;
+    border-radius: 3px;
+}
+    .rry{  
+    background-color: green;
+    color: #fff;
+    border:none;
+    width:50px;
+    border-radius: 1px;
     padding-left:3px ;
     padding-right:3px ;
     border-radius: 3px;
 }
-
 .m11{
     align-items: center;
     display: flex;
@@ -514,7 +523,7 @@ font-size: small;
 color:rgb(26, 19, 11);
     border:none;
     border-radius: 2px;
-    margin-left: -5px;
+    margin-left: 2px;
     font-size: small;
 }
 .t4{
@@ -668,7 +677,7 @@ padding-left: 50px;
     width:1349px;
     display:flex;
     flex: 1;
-    padding-left: 400px;
+    padding-left: 100px;
     margin-top: 10px;
     border-right: white;
     border-left: #8a5454;
@@ -678,6 +687,13 @@ border: 2px solid rgb(160, 148, 148);
     align-items: center;
     display: flex;
     margin-left: 20px;
+}
+.qqs{
+     align-items: center;
+    display: flex;
+    margin-left: 20px;
+    font-style: normal;
+    color: #344770;
 }
 .face{
     height:30px;
