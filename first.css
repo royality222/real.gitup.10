@@ -67,7 +67,7 @@ position:fixed;
         top:0;
         left:0;
         width:100%;
-        background:rgb(129, 119, 119);
+        background:rgb(51, 78, 153);
         padding:2px 100px;
         height:80px;
         text-align: center;
@@ -84,7 +84,7 @@ position:fixed;
     }    
 .nhi{
 background: url('3337721-68234688-2560-1440.jpg') no-repeat;
-width: 1349px;
+width: 100%;
 height:500px;
 margin-top: 80px;
 flex:1;
@@ -344,7 +344,7 @@ flex: 1;
 align-items: center;
 padding-left:170px;
 height:60px;
-width:1349px;
+width:100%;
 font-size: 20px;
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 font-weight: 1px;
@@ -361,7 +361,7 @@ margin-top: 40px;
 align-items: center;
 padding-left:170px;
 height:40px;
-width:1348px;
+width:100%;
 font-size: 20px;
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 font-weight: 1px;
@@ -377,7 +377,7 @@ margin-top: 40px;
 align-items: center;
 padding-left:170px;
 height:40px;
-width:1348px;
+width:100%;
 font-size: 20px;
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 font-weight: 1px;
@@ -649,7 +649,7 @@ width:30px;
 }
 .imo{
     height: 300px;
-    width:1345px;
+    width:100%;
     background-color: #162938;
     margin-top:70px;
     padding-left: 5px;
@@ -674,7 +674,7 @@ padding-left: 50px;
 }
 .myd{
     height: 100px;
-    width:1349px;
+    width:100%;
     display:flex;
     flex: 1;
     padding-left: 100px;
@@ -713,7 +713,7 @@ border: 2px solid rgb(160, 148, 148);
     width:50px;
 }
 .huh{
-    width:1340px;
+    width:100%;
     height:90px;
     background-color:#fff;
     display:flex;
