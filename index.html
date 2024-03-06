@@ -60,14 +60,19 @@
       
       </div>
     
-      <div class="dropdown" style="  width: 20%;margin-left: 35px; display: flex;">
-        <button  class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="height: 40px; background-color: blue; color: white;">
-          <i class="bi bi-cart4"></i> cart
-        </button>
-        <div id="cartCount" class="cart-count">0</div>
-        <ul class="dropdown-menu" id="cart" style="width: 350px; height: 500px; background-color: white; ">
-      </div>
+     
+    <div class="btn-group dropup" style="  width: 20%;margin-left: 35px; display: flex;">
+      <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="height: 40px; background-color: blue; color: white;">
+        <i class="bi bi-cart4"></i> cart
+      </button>
+      <div id="cartCount" class="cart-count">0</div>
+      <ul class="dropdown-menu" id="cart"  style="width: 450px; height: 500px; background-color: white; margin-top: 20px; border: none;">
+        <li><a class="dropdown-item" href="#">Menu item</a></li>
+        <li><a class="dropdown-item" href="#">Menu item</a></li>
+        <li><a class="dropdown-item" href="#">Menu item</a></li>
+      </ul>
     </div>
+  </div>
     <!--header stop  -->
 
     <div
@@ -539,15 +544,16 @@
 
 
 
-  <div style="width:100%; height: 460px; display: flex; justify-content: center; align-items: center;">
+  <div style="width:100%; height: 557px; display: flex; justify-content: center; align-items: center;">
     <div
       style="
-        height: 500px;
-        width: 80%;
+        height: 514px;
+        width: 90%;
         padding-left: 1px;
         background-color: rgb(231, 236, 240);
         padding-right: 2px;
         padding-top: 1px;
+       
       "
     >
       <div style="display: flex; align-items: center; margin-top: 2px;">
@@ -555,7 +561,7 @@
         class="product"
            data-name="product1" data-id="1" data-price="50"
           style="
-            height: 250px;
+            height: 257px;
             width: 20%;
             background-color: white;
             margin-left: 2px;
@@ -575,12 +581,11 @@
               style="
                 background-color: rgb(56, 56, 197);
                 border-radius: 10px;
-                padding: 1px;
                 width: 72%;
                 align-items: center;
                 justify-content: center;
-                padding-left: 15px;
                 margin-left: 20px;
+                border: none;
                 color: white;
                 font-size: 12px;
                 font-weight: 300;
@@ -602,33 +607,37 @@
           </script>
             <p
               style="
-                font-size: 15px;
-                font-weight: 300;
-                color: rgb(82, 122, 18);
+                font-size: 12px;
+                font-weight: 600;
+                color: black;
                 margin-left: 30px;
+                font-style: oblique;
               "
             >
-              Wireless Mouse
+             Mouse
             </p>
             <p
               id="deme"
               style="
-                margin-left: 30px;
+               width: 100%;
+               text-align: center;
                 font-size: 20px;
                 color: blue;
                 font-family: 'Gill Sans', 'Gill Sans MT', Calibri,
                   'Trebuchet MS', sans-serif;
-                font-weight: bold;
+               
               "
             >
-              $300
+            #3000
+            <a style="font-size: 13px; color: rgb(105, 102, 102); margin-left: 5px; text-decoration: line-through; font-style: oblique;"
+            >#5000</a>
             </p>
           </div>
         </div>
 
         <div
           style="
-            height: 250px;
+            height: 257px;
             width: 20%;
             background-color: white;
             margin-left: 2px;
@@ -644,27 +653,27 @@
               style="
                 background-color: rgb(56, 56, 197);
                 border-radius: 10px;
-                padding: 1px;
                 width: 70%;
                 align-items: center;
                 justify-content: center;
-                padding-left: 15px;
                 margin-left: 20px;
                 color: white;
                 font-size: 12px;
+                border: none;
                 font-weight: 300;
               "
               type="button"
               onclick='document.getElementById("demt") .innerHTML ="Not Available" '
             >
-              sold out <i class="bi bi-truck" style="margin-left: 7px"></i>
+              Add to cart <i class="bi bi-truck" style="margin-left: 7px"></i>
           </button>
             <p
               style="
-                font-size: 12px;
-                font-weight: 300;
-                color: rgb(82, 122, 18);
+               font-size: 12px;
+                font-weight: 600;
+                color: black;
                 margin-left: 30px;
+                font-style: oblique;
               "
             >
               monitor
@@ -673,21 +682,23 @@
             <p
               id="demt"
               style="
-                margin-left: 30px;
-                font-size: 10px;
+                width: 100%;
+               text-align: center;
+                font-size: 20px;
                 color: blue;
                 font-family: 'Gill Sans', 'Gill Sans MT', Calibri,
                   'Trebuchet MS', sans-serif;
-                font-weight: bold;
-              "
+               "
             >
-              $300
+            #30,000
+            <a style="font-size: 13px; color: rgb(105, 102, 102); margin-left: 5px; text-decoration: line-through; font-style: oblique;"
+            >#50,000</a>
             </p>
           </div>
         </div>
         <div
           style="
-            height: 250px;
+            height: 257px;
             width: 20%;
             background-color: white;
             margin-left: 2px;
@@ -703,11 +714,10 @@
               style="
                 background-color: rgb(56, 56, 197);
                 border-radius: 10px;
-                padding: 1px;
                 width: 70%;
                 align-items: center;
                 justify-content: center;
-                padding-left: 15px;
+                border: none;   
                 margin-left: 20px;
                 color: white;
                 font-size: 12px;
@@ -720,33 +730,37 @@
           </button>
             <p
               style="
-                font-size: 12px;
-                font-weight: 300;
-                color: rgb(82, 122, 18);
+               font-size: 12px;
+                font-weight: 600;
+                color: black;
                 margin-left: 30px;
+                font-style: oblique;
               "
             >
-              complete system
+             System
             </p>
 
             <p
               id="demm"
               style="
-                margin-left: 30px;
-                font-size: 10px;
+                  width: 100%;
+               text-align: center;
+                font-size: 20px;
                 color: blue;
                 font-family: 'Gill Sans', 'Gill Sans MT', Calibri,
                   'Trebuchet MS', sans-serif;
-                font-weight: bold;
+                
               "
             >
-              $500
+            #300,000
+            <a style="font-size: 13px; color: rgb(105, 102, 102); margin-left: 5px; text-decoration: line-through; font-style: oblique;"
+            >#500,000</a>
             </p>
           </div>
         </div>
         <div
           style="
-            height: 250px;
+            height: 257px;
             width: 20%;
             background-color: white;
             margin-left: 2px;
@@ -765,15 +779,16 @@
               style="
                 background-color: rgb(56, 56, 197);
                 border-radius: 10px;
-                padding: 1px;
+         
                 width: 70%;
                 align-items: center;
                 justify-content: center;
-                padding-left: 15px;
+                border: none;
                 margin-left: 20px;
                 color: white;
                 font-size: 12px;
                 font-weight: 300;
+                border: none;
               "
               type="button"
               onclick='document.getElementById("deml") .innerHTML ="success add to cart" '
@@ -783,31 +798,35 @@
             <p
               style="
                 font-size: 12px;
-                font-weight: 300;
-                color: rgb(82, 122, 18);
+                font-weight: 600;
+                color: black;
                 margin-left: 30px;
+                font-style: oblique;
               "
             >
-              Wireless keyboard
+               keyboard
             </p>
             <p
               id="deml"
               style="
-                margin-left: 30px;
-                font-size: 10px;
+                  width: 100%;
+               text-align: center;
+                font-size: 20px;
                 color: blue;
                 font-family: 'Gill Sans', 'Gill Sans MT', Calibri,
                   'Trebuchet MS', sans-serif;
-                font-weight: bold;
+             
               "
             >
-              $300
+            #10,000
+            <a style="font-size: 13px; color: rgb(105, 102, 102); margin-left: 5px; text-decoration: line-through; font-style: oblique;"
+            >#10,500</a>
             </p>
           </div>
         </div>
         <div
           style="
-            height: 250px;
+            height: 257px;
             width: 20%;
             background-color: white;
             margin-left: 2px;
@@ -823,15 +842,16 @@
               style="
                 background-color: rgb(56, 56, 197);
                 border-radius: 10px;
-                padding: 1px;
+            
                 width: 70%;
                 align-items: center;
                 justify-content: center;
-                padding-left: 15px;
+                border: none;
                 margin-left: 20px;
                 color: white;
                 font-size: 12px;
                 font-weight: 300;
+                border: none;
               "
               type="button"
               onclick='document.getElementById("demb") .innerHTML ="success add to cart" '
@@ -840,32 +860,36 @@
           </button>
             <p
               style="
-                font-size: 12px;
-                font-weight: 300;
-                color: rgb(82, 122, 18);
+               font-size: 12px;
+                font-weight: 600;
+                color: black;
                 margin-left: 30px;
+                font-style: oblique;
               "
             >
-              refrigerator
+              Refrigerator
             </p>
 
             <p
               id="deml"
               style="
-                margin-left: 30px;
-                font-size: 10px;
+                  width: 100%;
+               text-align: center;
+                font-size: 20px;
                 color: blue;
                 font-family: 'Gill Sans', 'Gill Sans MT', Calibri,
                   'Trebuchet MS', sans-serif;
-                font-weight: bold;
+               
               "
             >
-              $300
+                #1700
+              <a style="font-size: 13px; color: rgb(105, 102, 102); margin-left: 5px; text-decoration: line-through; font-style: oblique;"
+              >#2000</a>
             </p>
           </div>
         </div>
       </div>
-      <div style="display: flex; align-items: center; margin-top: 2px">
+      <div style="display: flex; align-items: center; margin-top: 2px;  margin-bottom: 1px;">
         <div
           style="
             height: 250px;
@@ -887,11 +911,11 @@
               style="
                 background-color: rgb(56, 56, 197);
                 border-radius: 10px;
-                padding: 1px;
+             
                 width: 70%;
                 align-items: center;
                 justify-content: center;
-                padding-left: 15px;
+                border: none;
                 margin-left: 20px;
                 color: white;
                 font-size: 12px;
@@ -904,27 +928,31 @@
           </button>
             <p
               style="
-                font-size: 12px;
-                font-weight: 300;
-                color: rgb(82, 122, 18);
+               font-size: 12px;
+                font-weight: 600;
+                color: black;
                 margin-left: 30px;
+                font-style: oblique;;
               "
             >
-              Wireless Mouse
+            Mouse
             </p>
 
             <p
               id="demk"
               style="
-                margin-left: 30px;
-                font-size: 10px;
+                width: 100%;
+               text-align: center;
+                font-size: 20px;
                 color: blue;
                 font-family: 'Gill Sans', 'Gill Sans MT', Calibri,
                   'Trebuchet MS', sans-serif;
-                font-weight: bold;
+                
               "
             >
-              $300
+              #1700
+              <a style="font-size: 13px; color: rgb(105, 102, 102); margin-left: 5px; text-decoration: line-through; font-style: oblique;"
+              >#2000</a
             </p>
           </div>
         </div>
@@ -946,11 +974,11 @@
               style="
                 background-color: rgb(56, 56, 197);
                 border-radius: 10px;
-                padding: 1px;
+                
                 width: 70%;
                 align-items: center;
                 justify-content: center;
-                padding-left: 15px;
+                border: none;
                 margin-left: 20px;
                 color: white;
                 font-size: 12px;
@@ -963,27 +991,31 @@
           </button>
             <p
               style="
-                font-size: 12px;
-                font-weight: 300;
-                color: rgb(82, 122, 18);
+               font-size: 12px;
+                font-weight: 600;
+                color: black;
                 margin-left: 30px;
+                font-style: oblique;
               "
             >
-              monitor
+              Monitor
             </p>
 
             <p
               id="demp"
               style="
-                margin-left: 30px;
-                font-size: 10px;
+                  width: 100%;
+               text-align: center;
+                font-size: 20px;
                 color: blue;
                 font-family: 'Gill Sans', 'Gill Sans MT', Calibri,
                   'Trebuchet MS', sans-serif;
-                font-weight: bold;
+ 
               "
             >
-              $300
+              #30,000
+              <a style="font-size: 13px; color: rgb(105, 102, 102); margin-left: 5px; text-decoration: line-through; font-style: oblique;"
+              >#40,000</a>
             </p>
           </div>
         </div>
@@ -997,7 +1029,7 @@
         >
           <div>
             <a href="j">
-              <img style="width: 100%; height: 130px" src="image/P2PDCO0.jpg" />
+              <img style="width: 100%; height: 120px" src="image/P2PDCO0.jpg" />
             </a>
           </div>
           <div>
@@ -1005,11 +1037,11 @@
               style="
                 background-color: rgb(56, 56, 197);
                 border-radius: 10px;
-                padding: 1px;
+               
                 width: 70%;
                 align-items: center;
                 justify-content: center;
-                padding-left: 15px;
+                border: none;
                 margin-left: 20px;
                 color: white;
                 font-size: 12px;
@@ -1020,25 +1052,27 @@
           </button>
             <p
               style="
-                font-size: 12px;
-                font-weight: 300;
-                color: rgb(82, 122, 18);
+               font-size: 12px;
+                font-weight: 600;
+                color: black;
                 margin-left: 30px;
+                font-style: oblique;
               "
             >
-              complete system
+             System
             </p>
 
             <p  id="demp"
             style="
-              margin-left: 30px;
-              font-size: 10px;
-              color: blue;
-              font-family: 'Gill Sans', 'Gill Sans MT', Calibri,
-                'Trebuchet MS', sans-serif;
-              font-weight: bold;
+                 width: 100%;
+               text-align: center;
+                font-size: 20px;
+                color: blue;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri,
+                  'Trebuchet MS', sans-serif;
+        
             ">
-              $500
+              #500,000
               <a style="font-size: 10px; color: gold; margin-left: 5px"
                 >with delivery</a
               >
@@ -1056,7 +1090,7 @@
           <div>
             <a href="j">
               <img
-                style="width: 100%; height: 130px"
+                style="width: 100%; height: 120px"
                 src="image/istockphoto-1583047504-1024x1024-removebg-preview.png"
               />
             </a>
@@ -1066,11 +1100,11 @@
               style="
                 background-color: rgb(56, 56, 197);
                 border-radius: 10px;
-                padding: 1px;
+               
                 width: 70%;
                 align-items: center;
                 justify-content: center;
-                padding-left: 15px;
+                border: none;
                 margin-left: 20px;
                 color: white;
                 font-size: 12px;
@@ -1082,23 +1116,27 @@
             <p
               style="
                 font-size: 12px;
-                font-weight: 300;
-                color: rgb(82, 122, 18);
+                font-weight: 600;
+                color: black;
                 margin-left: 30px;
+                font-style: oblique;
               "
             >
-              Wireless keyboard
+               Keyboard
             </p>
 
             <p  id="demp"
             style="
-              margin-left: 30px;
-              font-size: 10px;
-              color: blue;
-              font-family: 'Gill Sans', 'Gill Sans MT', Calibri,
-                'Trebuchet MS', sans-serif;
-              font-weight: bold;
-            ">$200</p>
+                width: 100%;
+               text-align: center;
+                font-size: 20px;
+                color: blue;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri,
+                  'Trebuchet MS', sans-serif;
+               
+            ">#10,000
+              <a style="font-size: 13px; color: rgb(105, 102, 102); margin-left: 5px; text-decoration: line-through; font-style: oblique;"
+              >#15,000</a></p>
           </div>
         </div>
         <div
@@ -1111,7 +1149,7 @@
         >
           <div>
             <a href="j">
-              <img style="width: 100%; height: 130px" src="image/23311.jpg" />
+              <img style="width: 100%; height: 120px" src="image/23311.jpg" />
             </a>
           </div>
           <div>
@@ -1119,11 +1157,11 @@
               style="
                 background-color: rgb(56, 56, 197);
                 border-radius: 10px;
-                padding: 1px;
+                
                 width: 70%;
                 align-items: center;
                 justify-content: center;
-                padding-left: 15px;
+                border: none;
                 margin-left: 20px;
                 color: white;
                 font-size: 12px;
@@ -1134,24 +1172,28 @@
           </button>
             <p
               style="
-                font-size: 12px;
-                font-weight: 300;
-                color: rgb(82, 122, 18);
+               font-size: 12px;
+                font-weight: 600;
+                color: black;
                 margin-left: 30px;
+                font-style: oblique;
               "
             >
-              refrigerator
+              Refrigerator
             </p>
 
             <p  id="demp"
             style="
-              margin-left: 30px;
-              font-size: 10px;
-              color: blue;
-              font-family: 'Gill Sans', 'Gill Sans MT', Calibri,
-                'Trebuchet MS', sans-serif;
-              font-weight: bold;
-            ">$313</p>
+                 width: 100%;
+               text-align: center;
+                font-size: 20px;
+                color: blue;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri,
+                  'Trebuchet MS', sans-serif;
+            
+            ">#150,000
+             <a style="font-size: 13px; color: rgb(105, 102, 102); margin-left: 5px; text-decoration: line-through; font-style: oblique;"
+             >160,000</a></p>
           </div>
         </div>
       </div>
@@ -1160,13 +1202,12 @@
 
 
 
-    <div style="width: 100%; height: 250px; display: flex; justify-content: center; align-items: center;">
+    <div style="width: 100%; height: 250px; display: flex; justify-content: center; align-items: center;  margin-top: 40px;">
     <div
       style="
         width: 80%;
        height: 250px;
         display: flex;
-        margin-top: 10px;
       "
     >
       <div
@@ -1189,7 +1230,7 @@
           <h6 style="color: blue">Save up to $300</h6>
           <p
             style="
-              font-size: 12px;
+              font-size: 15px;
               width: 100%;
               font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             "
@@ -1197,7 +1238,7 @@
             Do not miss this chance to get your hands on this brilliant computer
             up for sale!
           </p>
-          <p style="font-size: 11px;    width: 100%; color: rgb(181, 184, 179)">
+          <p style="font-size: 13px;    width: 100%; color: rgb(181, 184, 179)">
             The software is the latest in the market, and every part of the
             computer is working absolutely fine.
           </p>
@@ -1244,7 +1285,7 @@
 
        <!-- MY SECOND SLIDE --> 
 
-       <div style="width: 80%; height: 30px; margin-top: 10px; margin-left: 100px; ">
+       <div style="width: 80%; height: 30px; margin-top: 50px; margin-left: 100px; ">
       <button class="prevBtn" style="
       background-color: blue;
 color: white;
@@ -1411,7 +1452,7 @@ width: 350px;
     </head>
     <body>
     
-   <div style="height: 400px;">
+   <div style="height: 20%; width: 20%;">
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253391.74979486965!2d4.534720186718747!3d7.097449899999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1038623bce0b212b%3A0x40bd19e0a5d531ae!2sAdeyemi%20Federal%20University%20Of%20Education!5e0!3m2!1sen!2sng!4v1708939329866!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>
   
