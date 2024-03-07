@@ -595,8 +595,8 @@
        ">#<span class="price">3000</span> <a style="font-size: 13px; color: rgb(105, 102, 102); margin-left: 5px; text-decoration: line-through; font-style: oblique;"
           >#5000</a></p>
           <div style="width: 100%; text-align: center;">
-        <button onclick="addToCart('product1')" class="sss"
-      >Add to cart <i class="bi bi-check" onclick="addToCart()" style="margin-left: 12px"></i></button>
+        <button onclick="addToCart('product1')"  onclick="addToCar('')" class="sss"
+      >Add to cart <i class="bi bi-check"  style="margin-left: 12px"></i></button>
       </div>
     </div>
 </div>
@@ -1205,7 +1205,7 @@ width: 350px;
       
 <script>
   // Function to increment cart count
-  function addToCart(product1) {
+  function addToCar() {
     var cartCountElement = document.getElementById("cartCount");
     var currentCount = parseInt(cartCountElement.innerText);
     cartCountElement.innerText = currentCount + 1;
@@ -1362,7 +1362,7 @@ height: 50px; display: flex; align-items: center; justify-content: center; ">
 
 <script>
   // Function to increment cart count
-  function addToCart(product1) {
+  function addToCart() {
     var cartCountElement = document.getElementById("cartCount");
     var currentCount = parseInt(cartCountElement.innerText);
     cartCountElement.innerText = currentCount + 1;
