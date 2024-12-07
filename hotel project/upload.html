@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course Reader</title>
+    <link rel="stylesheet" href="novel.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Select a Course</h1>
+      <select id="courseSelect">
+        <option value="">Select a course</option>
+      </select>
+
+      <div id="content">
+        <h2 id="courseTitle"></h2>
+        <div id="courseContent"></div>
+      </div>
+      <body>
+        <form id="uploadForm" enctype="multipart/form-data">
+          <h2>Upload a New Course</h2>
+          <input
+            type="text"
+            id="courseName"
+            name="courseName"
+            placeholder="Course Name"
+            required
+          />
+          <textarea
+            id="courseText"
+            name="courseText"
+            placeholder="Course Content"
+            required
+          ></textarea>
+          <button type="submit">Upload</button>
+        </form>
+      </div>
+    </body>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const courseSelect = document.getElementById("courseSelect");
+        const courseTitle = document.getElementById("courseTitle");
+        const courseContent = document.getElementById("courseContent");
+        const uploadForm = document.getElementById("uploadForm");
+
+        // Fetch available courses from the database
+        fetch("get_courses.php")
+          .then((response) => response.json())
+          .then((data) => {
+            data.forEach((course) => {
+              const option = document.createElement("option");
+              option.value = course.id;
+              option.textContent = course.name;
+              courseSelect.appendChild(option);
+            });
+          });
+
+        // Load course content when a course is selected
+        courseSelect.addEventListener("change", function () {
+          const courseId = courseSelect.value;
+          if (courseId) {
+            fetch(`get_course_content.php?id=${courseId}`)
+              .then((response) => response.json())
+              .then((data) => {
+                courseTitle.textContent = data.name;
+                courseContent.textContent = data.content;
+              });
+          } else {
+            courseTitle.textContent = "";
+            courseContent.textContent = "";
+          }
+        });
+
+        // Handle course upload
+        uploadForm.addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          const formData = new FormData(uploadForm);
+
+          fetch("upload_course.php", {
+            method: "POST",
+            body: formData,
+          })
+            .then((response) => response.text())
+            .then((data) => {
+              alert(data);
+              location.reload(); // Reload the page to refresh the course list
+            });
+        });
+      });
+    </script>
+  </body>
+</html>
+
+
+
+
+
+   
