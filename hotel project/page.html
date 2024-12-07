@@ -1,0 +1,48 @@
+<div class="container">
+  <header>
+      <h1>Course Reader</h1>
+  </header>
+  <section class="course-selection">
+      <label for="courses">Select a Course:</label>
+      <select id="courses" onchange="loadCourse()">
+          <option value="" disabled selected>Select a course</option>
+      </select>
+  </section>
+  <section class="course-display">
+      <div id="course-content" class="course-content">
+          <h2 id="course-title">Course Title</h2>
+          <img id="course-image" src="" alt="Course Image">
+          <p id="course-description">Select a course to see its details.</p>
+      </div>
+  </section>
+</div>
+<script>document.addEventListener('DOMContentLoaded', fetchCourses);
+
+function fetchCourses() {
+fetch('fetch_courses.php')
+  .then(response => response.json())
+  .then(data => {
+      const select = document.getElementById('courses');
+      data.forEach(course => {
+          const option = document.createElement('option');
+          option.value = course.id;
+          option.textContent = course.title;
+          select.appendChild(option);
+      });
+  })
+  .catch(err => console.error('Error fetching courses:', err));
+}
+
+function loadCourse() {
+const selectedCourseId = document.getElementById('courses').value;
+fetch(`fetch_course.php?id=${selectedCourseId}`)
+  .then(response => response.json())
+  .then(course => {
+      document.getElementById('course-title').textContent = course.title;
+      document.getElementById('course-image').src = course.image;
+      document.getElementById('course-description').textContent = course.description;
+      document.getElementById('course-content').style.display = 'block';
+  })
+  .catch(err => console.error('Error loading course:', err));
+}
+</script>
