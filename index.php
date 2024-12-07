@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin Panel</title>
-    <link rel="stylesheet" href="admin.css" />
+    <link rel="stylesheet" href="novel.css" />
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -31,18 +31,35 @@
     <div
       class=""
       style="
-        height: 70px;
+        height: 100px;
         background-color: white;
         color: rgb(99, 99, 148);
         font-size: 30px;
         font-family: 'Times New Roman', Times, serif;
         padding: 25px;
+        position: fixed;
+        width: 100%;
+        z-index: 88888888888888888;
       "
     >
-      Admin Panel
+      Student page
+    
+      <div class="btn-group" style="float: right;">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Courses
+        </button>
+        <ul class="dropdown-menu">
+          <select id="courses" onchange="loadCourse()">
+            <option value="" disabled selected>Select course</option>
+        </select>
+        </ul>
+      </div>
+
+
+
     </div>
     <div style="width: 100%; height: 570px; display: flex">
-      <div style="width: 20%; height: 570px; box-shadow: 3px 3px 2px">
+    <div style="width: 20%; height: 500px; margin-top: 100px; position: fixed; background-color: white; ">
         <div
           style="
             height: 30px;
@@ -75,120 +92,10 @@
             />
           </svg>
           <div style="margin-left: 25px; font-family: Garamond, serif">
-            DASHBOARD
+            MAIN
           </div>
         </div>
-        <div
-          class="set"
-          style="
-            height: 30px;
-            background-color: white;
-            width: 90%;
-            color: rgb(106, 113, 116);
-            margin-top: 15px;
-            display: flex;
-            align-items: center;
-            text-align: center;
-            padding-left: 25px;
-            margin-left: 10px;
-          "
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            class="bi bi-gear"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492M5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0"
-            />
-            <path
-              d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115z"
-            />
-          </svg>
-          <div style="margin-left: 25px; font-family: Garamond, serif">
-            <a style="text-decoration: none; color: rgb(146, 146, 192)" href="h"
-              >SETTING</a
-            >
-          </div>
-        </div>
-        <div
-          class="set"
-          style="
-            height: 30px;
-            background-color: white;
-            width: 90%;
-            color: rgb(106, 113, 116);
-            margin-top: 15px;
-            display: flex;
-            align-items: center;
-            text-align: center;
-            padding-left: 25px;
-            margin-left: 10px;
-          "
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            class="bi bi-cloud-arrow-up"
-            viewBox="0 0 16 16"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M7.646 5.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 6.707V10.5a.5.5 0 0 1-1 0V6.707L6.354 7.854a.5.5 0 1 1-.708-.708z"
-            />
-            <path
-              d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383m.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"
-            />
-          </svg>
-          <div style="margin-left: 25px; font-family: Garamond, serif">
-            <a
-              style="text-decoration: none; color: rgb(146, 146, 192)"
-              href="upload.php"
-              >UPLOADING</a
-            >
-          </div>
-        </div>
-        <div
-          class="set"
-          style="
-            height: 30px;
-            background-color: white;
-            width: 90%;
-            color: rgb(106, 113, 116);
-            margin-top: 15px;
-            display: flex;
-            align-items: center;
-            text-align: center;
-            padding-left: 25px;
-            margin-left: 10px;
-          "
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            class="bi bi-file-earmark-lock"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M10 7v1.076c.54.166 1 .597 1 1.224v2.4c0 .816-.781 1.3-1.5 1.3h-3c-.719 0-1.5-.484-1.5-1.3V9.3c0-.627.46-1.058 1-1.224V7a2 2 0 1 1 4 0M7 7v1h2V7a1 1 0 0 0-2 0M6 9.3v2.4c0 .042.02.107.105.175A.64.64 0 0 0 6.5 12h3a.64.64 0 0 0 .395-.125c.085-.068.105-.133.105-.175V9.3c0-.042-.02-.107-.105-.175A.64.64 0 0 0 9.5 9h-3a.64.64 0 0 0-.395.125C6.02 9.193 6 9.258 6 9.3"
-            />
-            <path
-              d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"
-            />
-          </svg>
-          <div style="margin-left: 25px; font-family: Garamond, serif">
-            <a style="text-decoration: none; color: rgb(146, 146, 192)" href="h"
-              >PASSWORD RESET</a
-            >
-          </div>
-        </div>
+
         <div
           class="set"
           style="
@@ -223,7 +130,7 @@
             />
           </svg>
           <div style="margin-left: 25px; font-family: Garamond, serif">
-            <a style="text-decoration: none; color: rgb(146, 146, 192)" href="h"
+            <a style="text-decoration: none; color: rgb(48, 48, 182)" href="h"
               >SUBSCRIPTION</a
             >
           </div>
@@ -236,18 +143,29 @@
           height: 100%;
           text-align: center;
           background-color: rgb(235, 238, 240);
-          display: flex;
-          align-items: center;
-          flex-direction: column;
-          justify-content: center;
+          margin-left: 20%;
+         
         "
       >
         <div
           style="
-            width: 95%;
+            width: 80%;
             height: 40px;
             display: flex;
+            position: fixed;
+            margin-top: 30px;
+            align-items: center;
             justify-content: space-between;
+            background-color: white;
+            border: 1px solid gray;
+            border-left: none;
+            border-right: none;
+            border-top:none ;
+            margin-left: -13px;
+            padding-left: 10px;
+            padding-right: 10px;
+            
+            
           "
         >
           <div>
@@ -274,7 +192,7 @@
                 color: rgb(90, 90, 161);
                 font-size: 20px;
               "
-              >Uploading</a
+              >Note</a
             >
           </div>
           <div>
@@ -299,69 +217,50 @@
                 font-family: Garamond, serif;
                 color: rgb(90, 90, 161);
               "
-              >Note</a
+              >Download note</a
             >
           </div>
         </div>
+ 
+        <div class="container" style="margin-top: 70px;">
+  <section class="course-display">
+      <div id="course-content" class="course-content">
+          <h2 id="course-title">Course Title</h2>
+          <img id="course-image" src="" alt="Course Image">
+          <p id="course-description">Select a course to see its details.</p>
+      </div>
+  </section>
+</div>
+<script>document.addEventListener('DOMContentLoaded', fetchCourses);
 
-        <div
-          style="
-            height: 80%;
-            width: 95%;
-            background-color: white;
-            color: rgb(57, 57, 201);
-            font-size: 25px;
-          "
-        >
-          <form
-            action="upload_course.php"
-            method="POST"
-            enctype="multipart/form-data"
-          >
-            <div class="mb-3 mt-3">
-              <label for="title" class="form-label" style="float: left;    font-family: Garamond, serif; margin-right: 10px; margin-top: 10x; margin-left: 10px;">Course title</label>
-              <input
-                type="text"
-                class="form-control"
-                name="title"
-                placeholder="course title"
-                required
-                style="width: 50%; height:30px;"
-              />
-            </div>
+function fetchCourses() {
+fetch('fetch_courses.php')
+  .then(response => response.json())
+  .then(data => {
+      const select = document.getElementById('courses');
+      data.forEach(course => {
+          const option = document.createElement('option');
+          option.value = course.id;
+          option.textContent = course.title;
+          select.appendChild(option);
+      });
+  })
+  .catch(err => console.error('Error fetching courses:', err));
+}
 
-            <div class="mb-3" style="display: flex; align-items: center;">
-  <label for="description" class="form-label" style="float: left;  font-family: Garamond, serif; margin-right: 10px; margin-top: 10x; margin-left: 10px;">Course note</label>
-              <textarea
-                class="form-control"
-                name="description"
-                rows="2"
-                style="width: 50%;  "
-                required
-              ></textarea>
-            </div>
-            <div style="margin-top: 15px">
-              <label style="font-family: Garamond, serif" for="image"
-                >Course Image:</label
-              >
-              <input
-                style="height: 50px; width: 50%; font-family: Garamond, serif; ;"
-                type="file"
-                name="image"
-                accept="image/*"
-                required
-                
-              />
-            </div>
-
-          <div  style="height: 50px; width: 70%; margin-left:60px">  <button style="font-family: Garamond, serif;
-            width: 50%; color: white; background-color: green; margin-top: 10px; border: none; border-radius: 5px;  height:40px
-            " type="submit">
-              Upload Course
-            </button>
-  </div>
-          </form>
-          
+function loadCourse() {
+const selectedCourseId = document.getElementById('courses').value;
+fetch(`fetch_course.php?id=${selectedCourseId}`)
+  .then(response => response.json())
+  .then(course => {
+      document.getElementById('course-title').textContent = course.title;
+      document.getElementById('course-image').src = course.image;
+      document.getElementById('course-description').textContent = course.description;
+      document.getElementById('course-content').style.display = 'block';
+  })
+  .catch(err => console.error('Error loading course:', err));
+}
+</script>
       
         </div>
       </div>
